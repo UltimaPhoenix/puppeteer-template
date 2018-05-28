@@ -22,7 +22,7 @@ async function run() {
     await page.screenshot({path: 'google-screenshot.png'});
     console.log('snapshot created completed');
 
-    process.exit(1)//exit and stop the whole docker
+    process.exit(1);//exit and stop the whole docker
 }
 
 

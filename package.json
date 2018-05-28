@@ -1,0 +1,24 @@
+{
+  "name": "puppeteer.example",
+  "version": "1.0.0",
+  "description": "Puppeteer example in docker container",
+  "main": "puppeteer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:UltimaPhoenix/puppeteer-template.git"
+  },
+  "keywords": [
+    "puppeteer",
+    "docker",
+    "example"
+  ],
+  "author": "UltimaPhoenix",
+  "license": "MIT",
+  "homepage": "https://github.com/UltimaPhoenix/puppeteer-template",
+  "dependencies": {
+    "puppeteer": "^1.4.0"
+  }
+}

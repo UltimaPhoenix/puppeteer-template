@@ -1,18 +1,20 @@
-FROM ultimaphoenix:puppeteer
+FROM ultimaphoenix/puppeteer
 
 LABEL name="puppetter example"
 LABEL maintainer="UltimaPhoenix"
 LABEL version="1.0.0"
-LABEL description="Headless Chrome installed in a container for Puppeteer usage"
+LABEL description="Puppeteer example docker image"
 
 
-WORKDIR /puppeteer
-COPY package.json /puppeteer
+RUN groupadd -r puppeteer && \
+    useradd --create-home --no-log-init -r -g puppeteer puppeteer
 
-
+USER puppeteer
+WORKDIR /home/puppeteer
+COPY package.json /home/puppeteer
 RUN npm install
-COPY . /mogul
 
-CMD node puppeteer.js
+COPY puppeteer.js /home/puppeteer
+CMD ["node", "puppeteer.js"]
 
 

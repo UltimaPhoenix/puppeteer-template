@@ -1,4 +1,4 @@
-FROM ultimaphoenix/puppeteer
+FROM ultimaphoenix/puppeteer:latest@sha256:deede1008d458f1142c345a7cb4ce3d59fbc94204e4044174f170b021449e7d5
 
 LABEL name="puppetter example"
 LABEL maintainer="UltimaPhoenix"
